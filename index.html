@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Save A Life</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+		<script>
+    function play() {
+        var audio = document.getElementById('audio');
+        if (audio.paused) {
+            audio.play();
+        }else{
+            audio.pause();
+            audio.currentTime = 0
+        }
+    }
+</script>
+	</head>
+	<body class="landing">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="index.html">Save A Life</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="../templates/hospitals.html">Hospitals</a></li>
+											<li><a href="../templates/firstaid.html">First Aid</a></li>
+											<li><a href="https://baymax.glitch.me">Baymax</a></li>
+
+										</ul>
+
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+							<h2>Save A Life</h2>
+							<p>OPERATION BAYMAX</p>
+							<audio src="bmv.mp3" id="audio"></audio>
+							<button class="w3-button w3-circle" id="play" onclick="play()">•—•</button>
+
+						</div>
+						<a href="#one" class="more scrolly">Learn More</a>
+					</section>
+
+
+
+				<!-- One -->
+					<section id="one" class="wrapper style1 special">
+						<div class="inner">
+							<header class="major">
+								<h2>Lets Save the World</h2>
+								<p>Lorem Ipsum</p>
+							</header>
+
+						</div>
+					</section>
+
+
+				<!-- Footer -->
+					<footer id="footer">
+						<!-- <ul class="icons">
+							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+							<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+						</ul> -->
+						<ul class="copyright">
+							<li>&copy; Brenna Nieva 2019</li><li> </li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
