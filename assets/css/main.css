@@ -3805,3 +3805,10 @@
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
+
+	.centered {
+	  text-align: center;
+	  display: inline-block;
+		position: absolute;
+
+	}
