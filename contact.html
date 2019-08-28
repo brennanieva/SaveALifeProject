@@ -38,46 +38,67 @@
 				<!-- Main -->
 					<article id="main">
 						<header>
-							<h2>Meet Maxwell</h2>
-							<p>Your Healthcare Assistant</p>
+							<h2>Contact</h2>
+							<p>Send us your feedback!</p>
 						</header>
 						<section class="wrapper style5">
 							<div class="inner">
 
 								<section>
-									<div class = "features" style ="text-align:center;">
-                  <p>Click Maxwell in the corner to begin.<br>
-									Try phrases such as "I cut my foot" or "I burned my arm"</p>
 
-									The goal is to make first aid knowledge accessible by anyone anywhere, Maxwell can also be found by through:
-									<br> Phone: 415-570-9351
-									<br>Google Assistant
+                  <div class="container">
+                    <form action="https://postmail.invotes.com/send"
+    method="post" id="email_form">
+    <input type="text" name="subject" placeholder="Subject" /> <br><br>
+    <input type="text" name="reply_to"
+                placeholder="Your Email" />
 
+      <input type="text" name="extra_phone_number"
+                placeholder="Phone Number" /><br>
+    <textarea name="text" placeholder="Message"></textarea>
+    <input type="hidden" name="access_token" value="xyosm110bmsyp5wgye72idtr" />
 
+    <input type="hidden" name="success_url" value="https://savealifeproject.com" />
+    <input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />
 
-									<br><br>
-									<div class= "features">
-										<script
-    defer="true" type="text/javascript"
-    botId="5d51cc130a5e20fb1d2da60c"
-    class="botcopy-embedder-d7lcfheammjct"
-    id="botcopy-embedder-d7lcfheammjct">
-    var s = document.createElement('script');
-    s.type = 'text/javascript'; s.async = true;
-    s.src = 'https://d7lcfheammjct.cloudfront.net/js/injection.js';
-    var embedder = document.getElementById('botcopy-embedder-d7lcfheammjct');
-    embedder.parentNode.insertBefore(s, embedder);
-</script>
-								</div>
-
-<br><br><br>
 
 <br><br>
-</div>
 
-</div> <br><Br>
-<div class="text-muted" style = "text-align:center;" style="color:grey;">
-<p> DISCLAIMED: Maxwell is an AI trained to respond with the Red Cross Organization's recommended steps to treat an injury. <br>  <b>If injury is severe,  always contact emergency services</b></p></div>
+    <input id="submit_form" type="submit" value="Send" />
+
+</form>
+
+<!-- optional, prevents the submit button from being pressed more than once -->
+<script>
+    var submitButton = document.getElementById("submit_form");
+    var form = document.getElementById("email_form");
+    form.addEventListener("submit", function (e) {
+        setTimeout(function() {
+            submitButton.value = "Sending...";
+            submitButton.disabled = true;
+        }, 1);
+    });
+</script>
+                    <!-- <form id="contact" action="mailto:maxwell.savealifeproject@gmail.com" enctype="text/plain" method="post">
+                      <h3>Contact Us</h3>
+                      <h4>or can be reached at maxwell.savealifeproject@gmail.com</h4>
+                      <fieldset>
+                        <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+                      </fieldset>
+                      <fieldset>
+                        <input placeholder="Your Email Address" type="email" tabindex="2" required>
+                      </fieldset>
+
+                      <fieldset>
+                        <textarea placeholder="Subject & Message ...." tabindex="5" required></textarea>
+                      </fieldset><br><br>
+                      <fieldset>
+                        <button name="Create Email" type="create" id="contact-submit" data-submit="...Sending">Create Email</button>
+                      </fieldset>
+                    </form> -->
+
+
+                  </div>
 								</section>
 
 
@@ -115,20 +136,7 @@
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#config-web-app -->
 
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyB1MLd_O9FqjwJEsJExjo807Lxbp_ZlH_8",
-    authDomain: "savealifeproject-82b69.firebaseapp.com",
-    databaseURL: "https://savealifeproject-82b69.firebaseio.com",
-    projectId: "savealifeproject-82b69",
-    storageBucket: "",
-    messagingSenderId: "275364404002",
-    appId: "1:275364404002:web:c955a6e89f40451b"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-</script>
+
 
 	</body>
 </html>
